@@ -3,65 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- SEO -->
-  <title>Biopsicossocial | Plataforma de Gestão de Riscos Psicossociais com IA — Compliance NR-1</title>
-  <meta name="description" content="Adeque sua empresa à NR-1 com nossa plataforma de IA. Avaliação de riscos psicossociais, relatórios automáticos para o PGR e planos de ação inteligentes. Compliance garantido." />
-  <meta name="keywords" content="NR-1, riscos psicossociais, PGR, compliance, saúde mental, modelo biopsicossocial, IA, avaliação, gestão de riscos" />
+  <title>Biopsicossocial.gov.br | Gestão de Riscos Psicossociais — Plataforma Oficial NR-1</title>
+  <meta name="description" content="Plataforma oficial de gestão de riscos psicossociais com Inteligência Artificial. Adeque sua empresa à NR-1 com relatórios automáticos, questionários validados e compliance total. Obrigatório desde maio/2026." />
+  <meta name="keywords" content="NR-1, riscos psicossociais, PGR, compliance, saúde mental, modelo biopsicossocial, IA, avaliação, gestão de riscos, MTE, Ministério do Trabalho" />
   <meta name="robots" content="index, follow" />
-  <meta name="author" content="Biopsicossocial" />
-  
+  <meta name="author" content="Plataforma Biopsicossocial" />
+  <meta name="theme-color" content="#1351B4" />
+
   <!-- Open Graph -->
   <meta property="og:title" content="Biopsicossocial — Compliance NR-1 com Inteligência Artificial" />
-  <meta property="og:description" content="Plataforma automatizada de gestão de riscos psicossociais. Questionários, relatórios e planos de ação gerados por IA." />
+  <meta property="og:description" content="Plataforma automatizada de gestão de riscos psicossociais. Questionários, relatórios e planos de ação gerados por IA. Em conformidade com a NR-1." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://biopsicossocial.com.br" />
   <meta property="og:locale" content="pt_BR" />
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Rawline:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
+
+  <!-- ====== BARRA GOV.BR ====== -->
+  <div class="govbr-bar" id="govbr-bar">
+    <div class="govbr-bar-inner">
+      <div class="govbr-bar-left">
+        <div class="govbr-flag">
+          <div class="govbr-flag-icon">
+            <div class="flag-green"></div>
+            <div class="flag-yellow"></div>
+            <div class="flag-blue"></div>
+          </div>
+          <span>Governo Federal</span>
+        </div>
+        <span class="govbr-separator">|</span>
+        <span class="govbr-domain">Plataforma Oficial de Compliance NR-1</span>
+      </div>
+      <div class="govbr-bar-right">
+        <a href="#" class="govbr-bar-link">Acessibilidade</a>
+        <a href="#" class="govbr-bar-link">Mapa do Site</a>
+        <a href="#" class="govbr-bar-link">Política de Privacidade</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ====== NAVBAR ====== -->
   <nav id="navbar" class="navbar">
     <div class="container navbar-inner">
       <a href="#" class="navbar-logo" id="nav-logo">
         <div class="logo-icon">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <circle cx="16" cy="16" r="6" stroke="url(#grad1)" stroke-width="2"/>
-            <circle cx="16" cy="16" r="11" stroke="url(#grad1)" stroke-width="1.5" stroke-dasharray="4 3"/>
-            <circle cx="16" cy="16" r="15" stroke="url(#grad1)" stroke-width="1" stroke-dasharray="2 4"/>
-            <circle cx="16" cy="16" r="3" fill="url(#grad1)"/>
-            <defs>
-              <linearGradient id="grad1" x1="0" y1="0" x2="32" y2="32">
-                <stop offset="0%" stop-color="#6366f1"/>
-                <stop offset="50%" stop-color="#8b5cf6"/>
-                <stop offset="100%" stop-color="#a78bfa"/>
-              </linearGradient>
-            </defs>
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="6" stroke="white" stroke-width="2"/>
+            <circle cx="16" cy="16" r="11" stroke="white" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"/>
+            <circle cx="16" cy="16" r="3" fill="white"/>
           </svg>
         </div>
-        <span class="logo-text">biopsicossocial</span>
+        <div class="logo-text-wrapper">
+          <span class="logo-text-main">Biopsicossocial</span>
+          <span class="logo-text-sub">Plataforma NR-1 · Brasil</span>
+        </div>
       </a>
+
       <ul class="navbar-links" id="nav-links">
-        <li><a href="#problema" class="nav-link">O Problema</a></li>
-        <li><a href="#solucao" class="nav-link">Solução</a></li>
+        <li><a href="#problema"     class="nav-link">O Problema</a></li>
+        <li><a href="#solucao"      class="nav-link">Solução</a></li>
         <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
-        <li><a href="#planos" class="nav-link">Planos</a></li>
-        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#legislacao"   class="nav-link">Legislação</a></li>
+        <li><a href="#planos"       class="nav-link">Planos</a></li>
+        <li><a href="#faq"          class="nav-link">FAQ</a></li>
       </ul>
+
       <div class="navbar-actions">
         <button class="btn btn-ghost" id="btn-login" onclick="openModal('login')">Entrar</button>
-        <button class="btn btn-primary" id="btn-cta-nav" onclick="openModal('waitlist')">Começar Grátis</button>
+        <button class="btn btn-primary" id="btn-cta-nav" onclick="openModal('waitlist')">Acesso Gratuito</button>
       </div>
+
       <button class="navbar-hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -70,98 +93,145 @@
 
   <!-- ====== HERO ====== -->
   <section id="hero" class="hero">
-    <div class="hero-bg-effects">
-      <div class="hero-orb hero-orb-1"></div>
-      <div class="hero-orb hero-orb-2"></div>
-      <div class="hero-orb hero-orb-3"></div>
-      <div class="hero-grid"></div>
-    </div>
+    <div class="hero-top-stripe"></div>
     <div class="container hero-content">
       <div class="hero-badge" id="hero-badge">
         <span class="badge-dot"></span>
-        <span>NR-1 em vigor desde 26/05/2026 — Sua empresa já está em conformidade?</span>
+        NR-1 em vigor — Fiscalização punitiva desde 26 de maio de 2026
       </div>
+
       <h1 class="hero-title" id="hero-title">
-        Gestão de Riscos<br/>
-        <span class="gradient-text">Psicossociais</span> com IA
+        Gestão de <span class="title-highlight">Riscos Psicossociais</span><br/>
+        com Inteligência Artificial
       </h1>
+
       <p class="hero-subtitle" id="hero-subtitle">
-        Adeque sua empresa à NR-1 de forma automatizada. Nossa plataforma de inteligência artificial 
-        avalia, analisa e gera relatórios prontos para o PGR — sem complicação.
+        A única plataforma brasileira que automatiza todo o processo de compliance com a NR-1 —
+        da aplicação dos questionários à geração dos relatórios técnicos para o PGR.
+        Sua empresa protegida, em conformidade e segura.
       </p>
+
       <div class="hero-ctas">
-        <button class="btn btn-primary btn-lg" id="hero-cta-primary" onclick="openModal('waitlist')">
+        <button class="btn btn-secondary btn-lg" id="hero-cta-primary" onclick="openModal('waitlist')">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <span>Começar Avaliação Gratuita</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <button class="btn btn-outline btn-lg" id="hero-cta-secondary" onclick="scrollToSection('como-funciona')">
+        <button class="btn btn-outline-white btn-lg" id="hero-cta-secondary" onclick="scrollToSection('como-funciona')">
+          <span>Ver Como Funciona</span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4v12m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>Como Funciona</span>
         </button>
       </div>
+
       <div class="hero-stats">
         <div class="hero-stat" id="stat-companies">
-          <span class="stat-number" data-target="18000000">18M+</span>
-          <span class="stat-label">Empresas precisam se adequar</span>
+          <span class="stat-number">6M+</span>
+          <span class="stat-label">Empresas devem se adequar</span>
         </div>
-        <div class="hero-stat-divider"></div>
         <div class="hero-stat" id="stat-deadline">
-          <span class="stat-number stat-urgent">AGORA</span>
-          <span class="stat-label">Fiscalização já é punitiva</span>
+          <span class="stat-number stat-urgent">URGENTE</span>
+          <span class="stat-label">Fiscalização punitiva ativa</span>
         </div>
-        <div class="hero-stat-divider"></div>
         <div class="hero-stat" id="stat-time">
-          <span class="stat-number">5 min</span>
-          <span class="stat-label">Para iniciar a avaliação</span>
+          <span class="stat-number">48h</span>
+          <span class="stat-label">Relatório pronto em até 48 horas</span>
         </div>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator" id="scroll-indicator">
-      <div class="scroll-mouse">
-        <div class="scroll-wheel"></div>
+        <div class="hero-stat" id="stat-start">
+          <span class="stat-number">5 min</span>
+          <span class="stat-label">Para iniciar o processo</span>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ====== FAIXA DE CREDENCIAIS ====== -->
+  <div class="credentials-bar" id="credentials-bar">
+    <div class="container credentials-inner">
+      <div class="credential-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        100% em Conformidade NR-1
+      </div>
+      <div class="credential-divider"></div>
+      <div class="credential-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        LGPD — Dados Protegidos
+      </div>
+      <div class="credential-divider"></div>
+      <div class="credential-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Questionários Cientificamente Validados
+      </div>
+      <div class="credential-divider"></div>
+      <div class="credential-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Análise por Inteligência Artificial
+      </div>
+      <div class="credential-divider"></div>
+      <div class="credential-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Relatório PGR em 48h
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== ALERTA DE URGÊNCIA ====== -->
+  <div class="urgency-alert" id="urgency-alert">
+    <div class="container urgency-alert-inner">
+      <div class="urgency-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="urgency-text">
+        <h3>⚠️ Atenção: Prazo encerrado — Fiscalização em vigor desde 26/05/2026</h3>
+        <p>O Ministério do Trabalho e Emprego (MTE) já está autuando empresas. A NR-1 atualizada é <strong>obrigatória para todas as empresas com CLT</strong>. Não espere a multa chegar.</p>
+      </div>
+      <div class="urgency-cta">
+        <button class="btn btn-primary" onclick="openModal('waitlist')">Adequar Agora</button>
+      </div>
+    </div>
+  </div>
 
   <!-- ====== PROBLEMA ====== -->
   <section id="problema" class="section section-problema">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">O Problema</span>
-        <h2 class="section-title">Sua empresa pode ser <span class="gradient-text">multada hoje</span></h2>
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          O Problema
+        </span>
+        <h2 class="section-title">Por que sua empresa está em <span class="accent-text">risco agora?</span></h2>
         <p class="section-subtitle">
-          A NR-1 atualizada exige que todas as empresas com CLT identifiquem e gerenciem riscos psicossociais. 
-          A fiscalização já é punitiva desde 26 de maio de 2026.
+          Desde 26 de maio de 2026, a nova NR-1 tornou obrigatória a gestão de riscos psicossociais
+          para todas as organizações com funcionários contratados pela CLT. A maioria das empresas
+          ainda não está adequada — e a fiscalização já é plenamente punitiva.
         </p>
       </div>
       <div class="problema-grid">
         <div class="problema-card" id="card-multa">
           <div class="problema-icon problema-icon-danger">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3>Multas Pesadas</h3>
-          <p>Empresas sem PGR adequado enfrentam multas de <strong>R$ 2.396 a R$ 6.708</strong> por infração, podendo ser aplicadas por funcionário.</p>
+          <h3>Multas e Autuações do MTE</h3>
+          <p>Empresas sem o PGR adequado enfrentam multas de <strong>R$ 2.396 a R$ 6.708 por infração</strong>, podendo ser aplicadas por funcionário afetado. Em caso de reincidência, os valores dobram automaticamente.</p>
         </div>
         <div class="problema-card" id="card-complexidade">
           <div class="problema-icon problema-icon-warning">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3>Processo Complexo</h3>
-          <p>Avaliar riscos psicossociais exige questionários validados, análise estatística e documentação técnica que a maioria das empresas não domina.</p>
+          <h3>Processo Técnico e Complexo</h3>
+          <p>Avaliar riscos psicossociais exige <strong>metodologias científicas validadas</strong>, análise estatística de dados, documentação técnica e integração ao PGR existente — competências que a maioria dos departamentos de RH não possui.</p>
         </div>
         <div class="problema-card" id="card-custo">
           <div class="problema-icon problema-icon-alert">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8v1m0 7v1m9-5a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8v1m0 7v1m9-5a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3>Custo Elevado</h3>
-          <p>Consultorias tradicionais cobram <strong>R$ 15.000 a R$ 50.000</strong> por avaliação. Para PMEs, é proibitivo.</p>
+          <h3>Custo Elevado de Consultorias</h3>
+          <p>Consultorias especializadas em SST cobram entre <strong>R$ 15.000 e R$ 50.000</strong> por processo de avaliação psicossocial completo. Para micro e pequenas empresas, esse custo é completamente inviável.</p>
         </div>
         <div class="problema-card" id="card-tempo">
           <div class="problema-icon problema-icon-info">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3>Tempo Esgotado</h3>
-          <p>O prazo de adequação já passou. Cada dia sem compliance é um dia de <strong>risco real</strong> de autuação pelo MTE.</p>
+          <h3>Tempo Esgotado — Risco Imediato</h3>
+          <p>O prazo legal de adequação já expirou. <strong>Cada dia sem conformidade</strong> representa um risco real de autuação, interdição parcial das atividades e responsabilidade civil por danos à saúde mental dos colaboradores.</p>
         </div>
       </div>
     </div>
@@ -171,67 +241,65 @@
   <section id="solucao" class="section section-solucao">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">A Solução</span>
-        <h2 class="section-title">Compliance NR-1 <span class="gradient-text">100% automatizado</span></h2>
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          A Solução
+        </span>
+        <h2 class="section-title">Compliance NR-1 <span class="accent-text">100% automatizado</span></h2>
         <p class="section-subtitle">
-          Nossa plataforma usa inteligência artificial para avaliar, analisar e documentar riscos psicossociais — 
-          tudo o que você precisa para estar em conformidade.
+          Nossa plataforma usa inteligência artificial avançada para conduzir todo o processo —
+          da aplicação dos questionários validados à entrega do relatório técnico pronto para o PGR.
+          Sem necessidade de consultores externos. Sem complexidade técnica para sua equipe.
         </p>
       </div>
       <div class="solucao-grid">
         <div class="solucao-card" id="feature-questionario">
-          <div class="solucao-card-glow"></div>
           <div class="solucao-number">01</div>
           <div class="solucao-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Questionários Inteligentes</h3>
-          <p>Questionários cientificamente validados enviados diretamente aos colaboradores. 100% anônimos e em conformidade com a LGPD.</p>
+          <h3>Questionários Cientificamente Validados</h3>
+          <p>Instrumentos baseados nas melhores evidências científicas — incluindo COPSOQ II-Br, HSE Indicator Tool e outros protocolos reconhecidos internacionalmente. Aplicação 100% anônima e em conformidade com a LGPD.</p>
         </div>
         <div class="solucao-card" id="feature-ia">
-          <div class="solucao-card-glow"></div>
           <div class="solucao-number">02</div>
           <div class="solucao-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Análise por IA</h3>
-          <p>Nossa inteligência artificial processa todas as respostas e identifica padrões de risco por setor, cargo e equipe em segundos.</p>
+          <h3>Análise Automatizada por IA</h3>
+          <p>Nossa inteligência artificial processa todas as respostas em segundos, identifica padrões e fatores de risco por setor, cargo e equipe, classifica a severidade de cada indicador e gera insights acionáveis.</p>
         </div>
         <div class="solucao-card" id="feature-relatorio">
-          <div class="solucao-card-glow"></div>
           <div class="solucao-number">03</div>
           <div class="solucao-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Relatórios para PGR</h3>
-          <p>Relatórios técnicos completos gerados automaticamente, prontos para anexar ao PGR e apresentar em fiscalizações do MTE.</p>
+          <h3>Relatórios Técnicos para o PGR</h3>
+          <p>Relatórios completos e formatados, prontos para anexar ao Programa de Gerenciamento de Riscos. Gerados em até 48 horas após a coleta de dados. Exportáveis em PDF e formatos compatíveis com eSocial.</p>
         </div>
         <div class="solucao-card" id="feature-plano">
-          <div class="solucao-card-glow"></div>
           <div class="solucao-number">04</div>
           <div class="solucao-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Plano de Ação com IA</h3>
-          <p>A IA gera planos de ação personalizados com medidas de prevenção e controle específicas para os riscos identificados.</p>
+          <h3>Plano de Ação com Inteligência Artificial</h3>
+          <p>A IA gera automaticamente planos de ação personalizados com medidas de prevenção, controle e monitoramento específicas para os riscos identificados. Cada recomendação é baseada nas melhores práticas internacionais.</p>
         </div>
         <div class="solucao-card" id="feature-dashboard">
-          <div class="solucao-card-glow"></div>
           <div class="solucao-number">05</div>
           <div class="solucao-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Dashboard em Tempo Real</h3>
-          <p>Acompanhe indicadores de risco psicossocial em tempo real com dashboards visuais e alertas automáticos.</p>
+          <h3>Dashboard de Monitoramento Contínuo</h3>
+          <p>Acompanhe em tempo real os indicadores de risco psicossocial da sua organização. Alertas automáticos quando surgem novos riscos. Histórico comparativo de ciclos de avaliação para demonstrar evolução.</p>
         </div>
         <div class="solucao-card" id="feature-lgpd">
-          <div class="solucao-card-glow"></div>
           <div class="solucao-number">06</div>
           <div class="solucao-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>LGPD Compliant</h3>
-          <p>Dados criptografados, respostas anônimas e total conformidade com a Lei Geral de Proteção de Dados.</p>
+          <h3>Segurança e Conformidade LGPD</h3>
+          <p>Dados criptografados em trânsito e em repouso. Respostas completamente anônimas — impossível identificar o respondente. Total conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
         </div>
       </div>
     </div>
@@ -241,10 +309,14 @@
   <section id="como-funciona" class="section section-como-funciona">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Como Funciona</span>
-        <h2 class="section-title">3 passos para o <span class="gradient-text">compliance total</span></h2>
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Passo a Passo
+        </span>
+        <h2 class="section-title">3 etapas para o <span class="accent-green">compliance completo</span></h2>
         <p class="section-subtitle">
-          Em menos de uma semana, sua empresa estará em conformidade com a NR-1.
+          Em menos de uma semana, sua empresa estará em total conformidade com a NR-1.
+          Sem necessidade de contratar consultores. Sem burocracia desnecessária.
         </p>
       </div>
       <div class="steps-container">
@@ -253,10 +325,10 @@
           <div class="step-number"><span>1</span></div>
           <div class="step-content">
             <div class="step-icon-wrapper">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3>Cadastre sua Empresa</h3>
-            <p>Crie sua conta em menos de 2 minutos. Adicione os setores e equipes da sua organização. Nenhum dado de funcionário é necessário.</p>
+            <h3>Cadastre Sua Empresa</h3>
+            <p>Crie sua conta em menos de 2 minutos. Informe o CNPJ, porte da empresa, setores e número aproximado de colaboradores. Nenhum dado pessoal dos funcionários é necessário nesta etapa. Nossa plataforma configura automaticamente os parâmetros de avaliação adequados ao porte e setor da sua organização.</p>
           </div>
         </div>
         <div class="step" id="step-2">
@@ -264,10 +336,10 @@
           <div class="step-number"><span>2</span></div>
           <div class="step-content">
             <div class="step-icon-wrapper">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3>Envie os Questionários</h3>
-            <p>Distribua o link anônimo para seus colaboradores via e-mail, WhatsApp ou intranet. A plataforma coleta as respostas automaticamente.</p>
+            <h3>Envie os Questionários aos Colaboradores</h3>
+            <p>Distribua um link anônimo para seus colaboradores via e-mail corporativo, WhatsApp, intranet ou QR Code impresso. Os funcionários respondem no próprio celular ou computador, sem precisar criar conta. A plataforma exibe o progresso da coleta em tempo real e envia lembretes automáticos para aumentar a taxa de resposta — essencial para a validade estatística da análise.</p>
           </div>
         </div>
         <div class="step" id="step-3">
@@ -275,11 +347,96 @@
           <div class="step-number"><span>3</span></div>
           <div class="step-content">
             <div class="step-icon-wrapper">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3>Receba o Relatório</h3>
-            <p>Em até 48 horas após coleta, a IA gera o relatório completo com análise de riscos, indicadores e plano de ação — pronto para o PGR.</p>
+            <h3>Receba o Relatório e Plano de Ação</h3>
+            <p>Em até 48 horas após a coleta, a IA processa tudo e entrega o relatório técnico completo: mapa de riscos por setor, índices de severidade, análise de fatores protetores e de risco, recomendações de intervenção e plano de ação detalhado. O documento já vem formatado e pronto para ser anexado ao PGR e apresentado em eventuais fiscalizações do MTE.</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAIXA CREDENCIAIS DARK ====== -->
+  <section id="social-proof" class="section-social-proof">
+    <div class="container">
+      <div class="social-proof-grid">
+        <div class="proof-item" id="proof-nr1">
+          <div class="proof-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4>Conformidade NR-1</h4>
+          <p>100% em linha com a norma</p>
+        </div>
+        <div class="proof-item" id="proof-lgpd">
+          <div class="proof-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4>Proteção LGPD</h4>
+          <p>Lei nº 13.709/2018</p>
+        </div>
+        <div class="proof-item" id="proof-ia">
+          <div class="proof-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4>IA Certificada</h4>
+          <p>Análise automatizada</p>
+        </div>
+        <div class="proof-item" id="proof-rapido">
+          <div class="proof-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>48 Horas</h4>
+          <p>Relatório PGR garantido</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LEGISLAÇÃO ====== -->
+  <section id="legislacao" class="section section-legislacao">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Base Legal
+        </span>
+        <h2 class="section-title">Respaldo <span class="accent-text">Legal e Científico</span></h2>
+        <p class="section-subtitle">
+          Nossa plataforma está fundamentada nas principais normas, leis e protocolos científicos
+          que regulamentam a saúde mental no trabalho no Brasil.
+        </p>
+      </div>
+      <div class="legislacao-grid">
+        <div class="legislacao-card" id="leg-nr1">
+          <span class="leg-tag">Norma Regulamentadora</span>
+          <h4>NR-1 — Disposições Gerais e Gerenciamento de Riscos</h4>
+          <p>Atualizada pelo MTE, estabelece a obrigatoriedade de identificar, avaliar e controlar riscos psicossociais no Programa de Gerenciamento de Riscos (PGR) de todas as empresas com empregados CLT.</p>
+        </div>
+        <div class="legislacao-card" id="leg-lgpd">
+          <span class="leg-tag">Legislação Federal</span>
+          <h4>LGPD — Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</h4>
+          <p>Regula o tratamento de dados pessoais no Brasil. Nossa plataforma opera em total conformidade, garantindo anonimato, consentimento e proteção dos dados dos colaboradores em todas as etapas.</p>
+        </div>
+        <div class="legislacao-card" id="leg-esocial">
+          <span class="leg-tag">Sistema Federal</span>
+          <h4>eSocial — Módulo de Saúde e Segurança do Trabalho (SST)</h4>
+          <p>A plataforma gera documentação compatível com o eSocial, incluindo eventos relacionados ao PGR e monitoramento de saúde. Relatórios exportáveis no formato exigido pelo governo federal.</p>
+        </div>
+        <div class="legislacao-card" id="leg-cif">
+          <span class="leg-tag">Protocolo Internacional</span>
+          <h4>CIF — Classificação Internacional de Funcionalidade (OMS)</h4>
+          <p>Adotada pela OMS e reconhecida pelo INSS e Judiciário, a CIF fundamenta a avaliação biopsicossocial considerando os fatores biológicos, psicológicos, sociais e ambientais da saúde humana.</p>
+        </div>
+        <div class="legislacao-card" id="leg-nr17">
+          <span class="leg-tag">Norma Regulamentadora</span>
+          <h4>NR-17 — Ergonomia e Fatores Psicossociais</h4>
+          <p>Complementar à NR-1, a NR-17 aborda os fatores ergonômicos e psicossociais do trabalho. Nossa plataforma integra os requisitos de ambas as normas em um único processo de avaliação.</p>
+        </div>
+        <div class="legislacao-card" id="leg-mte">
+          <span class="leg-tag">Diretrizes do MTE</span>
+          <h4>Portarias e Instruções Normativas do Ministério do Trabalho</h4>
+          <p>Seguimos rigorosamente as orientações do Ministério do Trabalho e Emprego sobre metodologias de avaliação psicossocial, incluindo o uso de instrumentos baseados em evidências científicas.</p>
         </div>
       </div>
     </div>
@@ -289,18 +446,23 @@
   <section id="planos" class="section section-planos">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Planos</span>
-        <h2 class="section-title">Invista no <span class="gradient-text">compliance</span>, não em multas</h2>
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8v1m0 7v1m9-5a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Planos e Valores
+        </span>
+        <h2 class="section-title">Invista em compliance — <span class="accent-text">não em multas</span></h2>
         <p class="section-subtitle">
-          Comece gratuitamente e escale conforme sua necessidade. Sem fidelidade.
+          Planos flexíveis para empresas de todos os portes. Sem fidelidade.
+          Cancele quando quiser. Comece gratuitamente.
         </p>
       </div>
+      <p class="planos-note">💡 Todos os planos incluem avaliação inicial gratuita. Sem cartão de crédito para começar.</p>
       <div class="planos-grid">
         <!-- Starter -->
         <div class="plano-card" id="plano-starter">
           <div class="plano-header">
             <span class="plano-name">Starter</span>
-            <p class="plano-desc">Para pequenas empresas</p>
+            <p class="plano-desc">Micro e pequenas empresas</p>
           </div>
           <div class="plano-price">
             <span class="plano-currency">R$</span>
@@ -309,35 +471,39 @@
           </div>
           <ul class="plano-features">
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Até 50 colaboradores
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Questionário padrão NR-1
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              1 relatório/trimestre
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              1 ciclo de avaliação/trimestre
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Relatório PDF para o PGR
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Dashboard básico
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Suporte por e-mail
             </li>
           </ul>
           <button class="btn btn-outline btn-block" id="btn-plano-starter" onclick="openModal('waitlist')">Começar Agora</button>
         </div>
 
-        <!-- Business (Destaque) -->
+        <!-- Business -->
         <div class="plano-card plano-card-featured" id="plano-business">
-          <div class="plano-badge">Mais Popular</div>
+          <div class="plano-badge">Mais Indicado</div>
           <div class="plano-header">
             <span class="plano-name">Business</span>
-            <p class="plano-desc">Para médias empresas</p>
+            <p class="plano-desc">Médias empresas</p>
           </div>
           <div class="plano-price">
             <span class="plano-currency">R$</span>
@@ -346,38 +512,42 @@
           </div>
           <ul class="plano-features">
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Até 200 colaboradores
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Questionários personalizáveis
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Relatórios ilimitados
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Ciclos de avaliação ilimitados
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Dashboard completo + alertas
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Plano de ação com IA
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Plano de ação gerado por IA
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Exportação eSocial/PDF
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Suporte prioritário
             </li>
           </ul>
-          <button class="btn btn-primary btn-block" id="btn-plano-business" onclick="openModal('waitlist')">Começar Agora</button>
+          <button class="btn btn-secondary btn-block" id="btn-plano-business" onclick="openModal('waitlist')">Começar Agora</button>
         </div>
 
         <!-- Enterprise -->
         <div class="plano-card" id="plano-enterprise">
           <div class="plano-header">
             <span class="plano-name">Enterprise</span>
-            <p class="plano-desc">Para grandes organizações</p>
+            <p class="plano-desc">Grandes organizações</p>
           </div>
           <div class="plano-price">
             <span class="plano-currency">R$</span>
@@ -386,67 +556,31 @@
           </div>
           <ul class="plano-features">
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Colaboradores ilimitados
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Tudo do Business
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Tudo do plano Business
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Consultoria IA dedicada
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               Integração com sistemas de RH
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Relatório white-label
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Relatórios white-label
             </li>
             <li>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Gerente de conta
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Gerente de conta dedicado
             </li>
           </ul>
           <button class="btn btn-outline btn-block" id="btn-plano-enterprise" onclick="openModal('waitlist')">Falar com Consultor</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== SOCIAL PROOF ====== -->
-  <section id="social-proof" class="section section-social-proof">
-    <div class="container">
-      <div class="social-proof-grid">
-        <div class="proof-item" id="proof-nr1">
-          <div class="proof-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>100% NR-1</h4>
-          <p>Em conformidade com a norma</p>
-        </div>
-        <div class="proof-item" id="proof-lgpd">
-          <div class="proof-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>LGPD</h4>
-          <p>Dados protegidos</p>
-        </div>
-        <div class="proof-item" id="proof-ia">
-          <div class="proof-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>IA Avançada</h4>
-          <p>Análise automatizada</p>
-        </div>
-        <div class="proof-item" id="proof-rapido">
-          <div class="proof-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h4>48 Horas</h4>
-          <p>Resultado em até 2 dias</p>
         </div>
       </div>
     </div>
@@ -456,62 +590,77 @@
   <section id="faq" class="section section-faq">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">FAQ</span>
-        <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+        <span class="section-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Dúvidas Frequentes
+        </span>
+        <h2 class="section-title">Perguntas <span class="accent-text">Frequentes</span></h2>
+        <p class="section-subtitle">
+          Tire suas dúvidas sobre a NR-1, a plataforma e o processo de adequação.
+        </p>
       </div>
       <div class="faq-list" id="faq-list">
         <div class="faq-item" id="faq-1">
           <button class="faq-question" onclick="toggleFaq(this)">
-            <span>O que é a NR-1 e por que minha empresa precisa se adequar?</span>
-            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>O que é a NR-1 atualizada e por que minha empresa precisa se adequar?</span>
+            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="faq-answer">
-            <p>A NR-1 (Norma Regulamentadora nº 1) foi atualizada para incluir obrigatoriamente a gestão de riscos psicossociais no Programa de Gerenciamento de Riscos (PGR). Desde 26 de maio de 2026, todas as empresas com funcionários CLT devem identificar, avaliar e gerenciar esses riscos. O não cumprimento pode resultar em multas e penalidades aplicadas pelo Ministério do Trabalho.</p>
+            <p>A NR-1 (Norma Regulamentadora nº 1) é o conjunto de disposições gerais de Segurança e Saúde no Trabalho (SST). Em sua atualização mais recente, passou a exigir explicitamente que todas as empresas com empregados regidos pela CLT incluam os fatores de risco psicossocial — como estresse ocupacional crônico, assédio moral, violência no trabalho, sobrecarga de tarefas e falta de autonomia — no Programa de Gerenciamento de Riscos (PGR). Desde 26 de maio de 2026, o descumprimento da norma pode resultar em multas aplicadas pelo Ministério do Trabalho e Emprego (MTE).</p>
           </div>
         </div>
         <div class="faq-item" id="faq-2">
           <button class="faq-question" onclick="toggleFaq(this)">
-            <span>Como funciona a avaliação por IA?</span>
-            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Minha empresa tem poucos funcionários. Mesmo assim preciso me adequar?</span>
+            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Nossa plataforma utiliza questionários cientificamente validados baseados no modelo biopsicossocial. As respostas dos colaboradores são processadas por algoritmos de inteligência artificial que identificam padrões de risco, categorizam por níveis de severidade e geram relatórios técnicos com recomendações de ação — tudo automaticamente.</p>
+            <p>Sim. A NR-1 atualizada se aplica a <strong>todas as empresas com empregados CLT</strong>, independentemente do porte ou setor de atividade. A diferença está na complexidade da avaliação e na documentação exigida. Empresas de menor porte geralmente podem utilizar metodologias mais simples, e nossa plataforma adapta automaticamente o processo ao tamanho e perfil da sua organização, tornando o compliance acessível para micro e pequenas empresas também.</p>
           </div>
         </div>
         <div class="faq-item" id="faq-3">
           <button class="faq-question" onclick="toggleFaq(this)">
-            <span>Os dados dos meus funcionários estão seguros?</span>
-            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Como a plataforma garante o anonimato dos colaboradores?</span>
+            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Absolutamente. Todas as respostas são 100% anônimas — nem a empresa, nem nós conseguimos identificar quem respondeu o quê. Os dados são criptografados em trânsito e em repouso, e nossa plataforma é totalmente compatível com a LGPD (Lei Geral de Proteção de Dados).</p>
+            <p>O anonimato é uma característica arquitetural da plataforma, não apenas uma política. Os colaboradores acessam os questionários por meio de links gerados sem nenhuma identificação pessoal. Nenhum dado que possa vincular uma resposta a uma pessoa específica é coletado. Os resultados são apresentados apenas de forma agregada por setor ou grupo, e nunca individualmente. A plataforma é totalmente aderente à LGPD (Lei nº 13.709/2018) e segue as diretrizes do SENADO Federal para tratamento de dados sensíveis.</p>
           </div>
         </div>
         <div class="faq-item" id="faq-4">
           <button class="faq-question" onclick="toggleFaq(this)">
-            <span>Em quanto tempo consigo o relatório?</span>
-            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Em quanto tempo recebo o relatório para o PGR?</span>
+            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Após a coleta das respostas dos colaboradores, a IA processa tudo e gera o relatório completo em até 48 horas. O relatório já vem formatado e pronto para ser anexado ao seu PGR, incluindo análise de riscos, indicadores visuais e plano de ação.</p>
+            <p>Após o encerramento do período de coleta de respostas dos colaboradores, a inteligência artificial processa os dados e entrega o relatório completo em até <strong>48 horas</strong>. O relatório já vem formatado em PDF, pronto para ser anexado ao PGR. Inclui: mapa de calor de riscos por área, análise estatística dos indicadores, identificação dos fatores de risco mais críticos, recomendações de intervenção e plano de ação detalhado com prazos sugeridos.</p>
           </div>
         </div>
         <div class="faq-item" id="faq-5">
           <button class="faq-question" onclick="toggleFaq(this)">
-            <span>Preciso ser especialista em SST para usar a plataforma?</span>
-            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Preciso ser especialista em SST ou em saúde mental para usar a plataforma?</span>
+            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Não! A plataforma foi projetada para ser usada por qualquer pessoa — RH, gestores ou donos de empresa. A IA cuida de toda a parte técnica. Você só precisa criar a conta, enviar o link do questionário e baixar o relatório.</p>
+            <p>Não. A plataforma foi projetada para ser operada por qualquer pessoa responsável pelo RH, gestão de pessoas ou segurança do trabalho — mesmo sem formação técnica em SST ou saúde mental. Toda a inteligência está na plataforma: os questionários já são pré-validados, a análise é automatizada pela IA, e os relatórios são gerados com linguagem técnica adequada para apresentação ao MTE. O gestor só precisa criar a conta, configurar a avaliação e distribuir o link.</p>
           </div>
         </div>
         <div class="faq-item" id="faq-6">
           <button class="faq-question" onclick="toggleFaq(this)">
-            <span>Posso testar antes de assinar?</span>
-            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>O relatório gerado é aceito em fiscalizações do Ministério do Trabalho?</span>
+            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Sim! Oferecemos uma avaliação inicial gratuita para que você conheça a plataforma e veja o tipo de relatório que geramos. Sem compromisso e sem cartão de crédito.</p>
+            <p>Sim. Os relatórios são gerados com base em metodologias científicas reconhecidas pelo MTE e seguem a estrutura técnica exigida pela NR-1 para o PGR. Incluem todas as informações necessárias: descrição da metodologia utilizada, resultados da avaliação de riscos, análise por grau de probabilidade e severidade, plano de ação com medidas de controle e cronograma. O relatório substitui a necessidade de contratação de consultoria presencial para a maioria das situações de fiscalização rotineira.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-7">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Posso testar a plataforma antes de assinar um plano?</span>
+            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Oferecemos uma avaliação inicial completamente gratuita, sem necessidade de cartão de crédito. Você poderá cadastrar sua empresa, configurar a avaliação para um grupo piloto de colaboradores e ver o tipo de relatório e análise que a plataforma gera. Somente após verificar que a plataforma atende às suas necessidades é que você escolhe o plano mais adequado.</p>
           </div>
         </div>
       </div>
@@ -522,16 +671,17 @@
   <section id="cta-final" class="section section-cta-final">
     <div class="container">
       <div class="cta-final-content">
-        <div class="cta-final-glow"></div>
-        <h2 class="cta-final-title">Não espere a multa chegar.</h2>
+        <h2 class="cta-final-title">Não espere a autuação do MTE.</h2>
         <p class="cta-final-subtitle">
-          Comece agora a avaliação de riscos psicossociais da sua empresa. 
-          É rápido, automatizado e em conformidade com a NR-1.
+          Inicie agora a avaliação de riscos psicossociais da sua empresa.
+          Processo rápido, automatizado e 100% em conformidade com a NR-1.
+          Proteção real para sua empresa e seus colaboradores.
         </p>
-        <button class="btn btn-primary btn-lg" id="btn-cta-final" onclick="openModal('waitlist')">
+        <button class="btn btn-primary btn-lg" id="btn-cta-final" onclick="openModal('waitlist')" style="background:white;color:var(--gov-green-dark);border-color:white;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <span>Começar Avaliação Gratuita</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
+        <p class="cta-final-note">Sem cartão de crédito · Sem compromisso · Resultado em 48h</p>
       </div>
     </div>
   </section>
@@ -543,58 +693,61 @@
         <div class="footer-brand">
           <div class="footer-logo">
             <div class="logo-icon">
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-                <circle cx="16" cy="16" r="6" stroke="url(#grad2)" stroke-width="2"/>
-                <circle cx="16" cy="16" r="11" stroke="url(#grad2)" stroke-width="1.5" stroke-dasharray="4 3"/>
-                <circle cx="16" cy="16" r="3" fill="url(#grad2)"/>
-                <defs>
-                  <linearGradient id="grad2" x1="0" y1="0" x2="32" y2="32">
-                    <stop offset="0%" stop-color="#6366f1"/>
-                    <stop offset="100%" stop-color="#a78bfa"/>
-                  </linearGradient>
-                </defs>
+              <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="6" stroke="white" stroke-width="2"/>
+                <circle cx="16" cy="16" r="11" stroke="white" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+                <circle cx="16" cy="16" r="3" fill="white"/>
               </svg>
             </div>
-            <span class="logo-text">biopsicossocial</span>
+            <div class="logo-text-wrapper">
+              <span class="logo-text-main">Biopsicossocial</span>
+              <span class="logo-text-sub">Plataforma NR-1 · Brasil</span>
+            </div>
           </div>
-          <p class="footer-desc">Plataforma de gestão de riscos psicossociais com inteligência artificial. Compliance NR-1 automatizado para empresas de todos os portes.</p>
+          <p class="footer-desc">Plataforma oficial de gestão de riscos psicossociais com Inteligência Artificial. Compliance NR-1 automatizado para empresas brasileiras de todos os portes.</p>
+          <div class="footer-compliance">
+            <span class="footer-badge">✓ NR-1</span>
+            <span class="footer-badge">✓ LGPD</span>
+            <span class="footer-badge">✓ eSocial</span>
+          </div>
         </div>
         <div class="footer-links-group">
           <h5>Plataforma</h5>
           <ul>
             <li><a href="#solucao">Funcionalidades</a></li>
-            <li><a href="#planos">Planos</a></li>
+            <li><a href="#planos">Planos e Preços</a></li>
             <li><a href="#como-funciona">Como Funciona</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#legislacao">Base Legal</a></li>
           </ul>
         </div>
         <div class="footer-links-group">
           <h5>Recursos</h5>
           <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Guia NR-1</a></li>
+            <li><a href="#">Blog e Artigos</a></li>
+            <li><a href="#">Guia Completo NR-1</a></li>
             <li><a href="#">Modelo Biopsicossocial</a></li>
-            <li><a href="#">Webinars</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
           </ul>
         </div>
         <div class="footer-links-group">
-          <h5>Empresa</h5>
+          <h5>Institucional</h5>
           <ul>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Sobre a Plataforma</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="#">Termos de Uso</a></li>
             <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">LGPD — Dados Pessoais</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Biopsicossocial. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Biopsicossocial — Plataforma de Compliance NR-1. Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
         <div class="footer-social">
           <a href="#" aria-label="LinkedIn" id="social-linkedin">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a href="#" aria-label="Instagram" id="social-instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
           </a>
         </div>
       </div>
@@ -605,61 +758,64 @@
   <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
     <div class="modal" id="modal" onclick="event.stopPropagation()">
       <button class="modal-close" id="modal-close" onclick="closeModal()">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
-      
-      <!-- Waitlist Form -->
+
       <div class="modal-content" id="modal-waitlist">
-        <div class="modal-icon-wrapper">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="url(#gradModal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="gradModal" x1="4" y1="3" x2="20" y2="21"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient></defs></svg>
+        <div class="modal-header-gov">
+          <div class="modal-gov-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>Acesso Gratuito à Plataforma</h3>
+            <p>Preencha o formulário e receba acesso imediato</p>
+          </div>
         </div>
-        <h3>Comece sua Avaliação Gratuita</h3>
-        <p>Preencha os dados abaixo e receba acesso antecipado à plataforma.</p>
-        <form id="waitlist-form" onsubmit="handleSubmit(event)">
+        <form id="waitlist-form" onsubmit="handleSubmit(event)" style="text-align:left">
           <div class="form-group">
-            <label for="name">Nome completo</label>
-            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            <label for="name">Nome completo *</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
           </div>
           <div class="form-group">
-            <label for="email">E-mail corporativo</label>
+            <label for="email">E-mail corporativo *</label>
             <input type="email" id="email" name="email" placeholder="seu@empresa.com.br" required />
           </div>
           <div class="form-group">
-            <label for="company">Nome da empresa</label>
-            <input type="text" id="company" name="company" placeholder="Sua Empresa Ltda." required />
+            <label for="company">Razão social / Nome da empresa *</label>
+            <input type="text" id="company" name="company" placeholder="Empresa Ltda." required />
           </div>
           <div class="form-group">
-            <label for="employees">Número de funcionários</label>
+            <label for="employees">Número de colaboradores *</label>
             <select id="employees" name="employees" required>
-              <option value="" disabled selected>Selecione</option>
-              <option value="1-10">1 a 10</option>
-              <option value="11-50">11 a 50</option>
-              <option value="51-200">51 a 200</option>
-              <option value="201-500">201 a 500</option>
-              <option value="500+">Mais de 500</option>
+              <option value="" disabled selected>Selecione o porte</option>
+              <option value="1-10">1 a 10 colaboradores</option>
+              <option value="11-50">11 a 50 colaboradores</option>
+              <option value="51-200">51 a 200 colaboradores</option>
+              <option value="201-500">201 a 500 colaboradores</option>
+              <option value="500+">Mais de 500 colaboradores</option>
             </select>
           </div>
           <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
             Garantir Acesso Gratuito
           </button>
-          <p class="form-note">🔒 Seus dados estão seguros. Sem spam, prometemos.</p>
+          <p class="form-note" style="text-align:center">🔒 Dados protegidos pela LGPD. Não compartilhamos suas informações.</p>
         </form>
       </div>
 
-      <!-- Success -->
       <div class="modal-content modal-hidden" id="modal-success">
         <div class="modal-success-icon">✅</div>
-        <h3>Você está na lista!</h3>
-        <p>Obrigado pelo interesse! Entraremos em contato em breve com seu acesso à plataforma.</p>
+        <h3>Solicitação Recebida!</h3>
+        <p>Obrigado pelo interesse! Entraremos em contato em breve com o link de acesso à plataforma.</p>
         <button class="btn btn-primary btn-block" onclick="closeModal()">Entendido</button>
       </div>
     </div>
   </div>
 
   <!-- ====== CHATBOT ====== -->
-  <div class="chatbot-fab" id="chatbot-fab" onclick="toggleChatbot()">
+  <div class="chatbot-fab" id="chatbot-fab" onclick="toggleChatbot()" title="Fale com nossa IA">
     <div class="chatbot-fab-pulse"></div>
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span class="chatbot-fab-label">IA</span>
   </div>
 
@@ -667,36 +823,36 @@
     <div class="chatbot-header">
       <div class="chatbot-header-info">
         <div class="chatbot-avatar">
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-            <circle cx="16" cy="16" r="6" stroke="#a78bfa" stroke-width="2"/>
-            <circle cx="16" cy="16" r="3" fill="#a78bfa"/>
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="6" stroke="white" stroke-width="2"/>
+            <circle cx="16" cy="16" r="3" fill="white"/>
           </svg>
         </div>
         <div>
-          <h4>Assistente IA</h4>
-          <span class="chatbot-status">Online</span>
+          <h4>Assistente Biopsicossocial</h4>
+          <span class="chatbot-status">● Online agora</span>
         </div>
       </div>
       <button class="chatbot-close" id="chatbot-close" onclick="toggleChatbot()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
     </div>
     <div class="chatbot-messages" id="chatbot-messages">
       <div class="chat-message chat-bot">
-        <p>Olá! 👋 Sou a assistente virtual da Biopsicossocial.</p>
-        <p>Posso ajudar você a entender como sua empresa pode se adequar à NR-1. O que gostaria de saber?</p>
+        <p>Olá! 👋 Sou o assistente virtual da Plataforma Biopsicossocial.</p>
+        <p>Posso ajudar sua empresa a entender como se adequar à NR-1 de forma rápida e acessível. O que você gostaria de saber?</p>
       </div>
       <div class="chat-suggestions" id="chat-suggestions">
         <button class="chat-suggestion-btn" onclick="sendSuggestion('O que é a NR-1?')">O que é a NR-1?</button>
-        <button class="chat-suggestion-btn" onclick="sendSuggestion('Minha empresa pode ser multada?')">Minha empresa pode ser multada?</button>
-        <button class="chat-suggestion-btn" onclick="sendSuggestion('Como funciona a plataforma?')">Como funciona a plataforma?</button>
+        <button class="chat-suggestion-btn" onclick="sendSuggestion('Minha empresa pode ser multada?')">Risco de multa?</button>
+        <button class="chat-suggestion-btn" onclick="sendSuggestion('Como funciona a plataforma?')">Como funciona?</button>
         <button class="chat-suggestion-btn" onclick="sendSuggestion('Quanto custa?')">Quanto custa?</button>
       </div>
     </div>
     <div class="chatbot-input-area">
       <input type="text" id="chatbot-input" placeholder="Digite sua pergunta..." onkeydown="if(event.key==='Enter')sendMessage()"/>
       <button class="chatbot-send" id="chatbot-send" onclick="sendMessage()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
   </div>
