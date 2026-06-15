@@ -92,7 +92,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // === Form Submit ===
-(window as any).handleSubmit = function(e: Event) {
+(window as any).handleSubmit = async function(e: Event) {
   e.preventDefault();
   
   const form = document.getElementById('waitlist-form') as HTMLFormElement;
@@ -100,19 +100,39 @@ document.addEventListener('keydown', (e) => {
   const data: Record<string, string> = {};
   formData.forEach((value, key) => { data[key] = value as string; });
   
-  // Store locally
-  const leads = JSON.parse(localStorage.getItem('biopsicossocial_leads') || '[]');
-  leads.push({ ...data, timestamp: new Date().toISOString() });
-  localStorage.setItem('biopsicossocial_leads', JSON.stringify(leads));
-  
-  // Show success
-  modalWaitlist?.classList.add('modal-hidden');
-  modalSuccess?.classList.remove('modal-hidden');
-  
-  // Reset form
-  form.reset();
-  
-  console.log('📧 Lead captured:', data);
+  const btn = document.getElementById('btn-submit') as HTMLButtonElement;
+  if(btn) {
+    btn.disabled = true;
+    btn.innerHTML = 'Enviando...';
+  }
+
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    
+    if(!res.ok) throw new Error('Erro ao enviar');
+    
+    // Show success
+    modalWaitlist?.classList.add('modal-hidden');
+    modalSuccess?.classList.remove('modal-hidden');
+    
+    // Reset form
+    form.reset();
+  } catch (err) {
+    console.error(err);
+    alert('Erro ao enviar solicitação. Verifique sua conexão ou tente novamente mais tarde.');
+  } finally {
+    if(btn) {
+      btn.disabled = false;
+      btn.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        Garantir Acesso Gratuito
+      `;
+    }
+  }
 };
 
 // === FAQ Accordion ===
