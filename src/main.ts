@@ -1,7 +1,7 @@
 import './style.css';
 
 // ====================================
-// BIOPSICOSSOCIAL — Main Application
+// AGÊNCIA REGULADORA — Main Application
 // ====================================
 
 // === Navbar Scroll Effect ===
