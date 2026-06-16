@@ -23,3 +23,13 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Zero-Leak Protection (auto-added)
+.env
+.env.*
+.env.local
+*.key
+*.pem
+credentials.json
+service-account*.json
+firebase-adminsdk*.json
