@@ -33,3 +33,16 @@ dist-ssr
 credentials.json
 service-account*.json
 firebase-adminsdk*.json
+.env.production
+.env.development
+.env*.local
+*.p12
+*.jks
+*.keystore
+node_modules/
+.next/
+dist/
+build/
+Thumbs.db
+.vercel/
+.turbo/
