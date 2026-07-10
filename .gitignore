@@ -50,3 +50,5 @@ token.json
 service-account.json
 __pycache__/
 venv/
+legado/
+public/firebase-messaging-sw.js
